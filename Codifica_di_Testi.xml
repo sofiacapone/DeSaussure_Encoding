@@ -373,17 +373,17 @@
                     en <name type="place">Valais</name> d'<choice><abbr resp="#FDS">1</abbr><expan resp="#SB">une</expan></choice> part et <choice><abbr resp="#FDS">d</abbr><expan resp="#SB"><ex>ans</ex></expan></choice> la direction du
                     <lb xml:id="pag_18_line_8" n="8" facs="#pag18_line8"/>
                     <name type="place">Dauphiné</name> de l'autre;</ab><ab type="pericope" xml:id="pag_18_per_3" n="3"> qu’il n’est donc pas <choice><abbr resp="#FDS" type="superscription">1</abbr><expan resp="#SB">un</expan></choice>
-                            <lb xml:id="pag_18_line_9" n="2" facs="#pag18_line9"/>
+                            <lb xml:id="pag_18_line_9" n="9" facs="#pag18_line9"/>
                                 <term ref="#car">caractère</term><emph rend="underline"><term ref="#dist"> distinctif</term></emph>.
                         </ab>
                         <ab type="pericope" xml:id="pag_18_per_4" n="4"> Et ainsi de suite : il n’y
-                            <lb xml:id="pag_18_line_10" n="4" facs="#pag18_line10"/>
+                            <lb xml:id="pag_18_line_10" n="10" facs="#pag18_line10"/>
                                 aura jamais un <term ref="#car">caractère</term> quelconque qui
-                            <lb xml:id="pag_18_line_11" n="5" facs="#pag18_line11"/> 
+                            <lb xml:id="pag_18_line_11" n="11" facs="#pag18_line11"/> 
                                 se trouve coïncider dans son <term ref="#agéo">aire géogra- 
-                            <lb xml:id="pag_18_line_12" n="6" facs="#pag18_line12"/>      
+                            <lb xml:id="pag_18_line_12" n="12" facs="#pag18_line12"/>      
                                 phique</term> avec <choice><abbr resp="#FDS" type="superscription">1</abbr><expan resp="#SB">un</expan></choice> autre, l’un relie la <name type="place">Savoie</name> avec <name type="place">Vaud</name>, 
-                            <lb xml:id="pag_18_line_13" n="7" facs="#pag18_line13"/> 
+                            <lb xml:id="pag_18_line_13" n="13" facs="#pag18_line13"/> 
                                 l’autre <choice><abbr resp="#FDS" type="superscription">1</abbr><expan resp="#SB">une</expan></choice> partie de la <name type="place">Savoie</name> avec <choice><abbr resp="#FDS" type="superscription">1</abbr><expan resp="#SB">une</expan></choice> partie du <name type="place">Valais</name>, le <choice><abbr resp="#FDS" type="superscription">3e</abbr><expan resp="#SB">troisième</expan></choice> une...
                         </ab>
                         <ab type="pericope" xml:id="pag_18_per_5" n="5">
