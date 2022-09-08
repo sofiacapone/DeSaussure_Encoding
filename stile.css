@@ -1,0 +1,635 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body{
+    background-image: url("FDS.png");
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position: 100% 1%;
+}
+
+h1, h2, h3, li, p, ab{
+    color: #222;
+}
+
+/* Nav */
+nav ul{
+    margin-top: 5vh;
+    margin-left: 5vh;
+    display: flex;
+    justify-content: left;
+}
+
+nav ul li{
+    list-style: none;
+    padding-right: 3%;
+}
+
+nav ul li a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    letter-spacing: 1.5px;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: #777;
+}
+
+/* Titoli */
+#intro{
+    position: relative;
+    width: 42%;
+    min-height: 60vh;
+    margin-top: 15vh;
+    margin-left: 5vh;
+    margin-bottom: 15vh;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: flex;
+}
+
+#intro div{
+    margin-top: 5vh;
+    margin-left: 5vh;
+}
+
+#intro h1{
+    margin-bottom: 2vh;
+    font-size: 3em;
+}
+
+#intro h2{
+   margin-bottom: 3vh;
+}
+
+#intro div + img{
+    position:absolute;
+    left: 103vh;
+    height: 93vh;
+    margin-top: -22vh;
+    display: none;
+}
+
+/*Caratteristiche*/
+
+#car{
+    margin-left: 5vh;
+    margin-right: 20vh;
+    margin-bottom: 10vh;
+    padding-bottom: 10vh;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+#car h3{
+    font-size: 2em;
+    margin-bottom: 2vh;
+    color: #333;
+}
+
+#car div ul{
+    margin-bottom: 6vh;
+    margin-left: 3vh;
+}
+
+#car div ul li{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    color: #999;
+    letter-spacing: 1.2px;
+}
+
+#car div ul li b{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #777;
+    letter-spacing: 1.2px;
+}
+
+/* Legenda */
+
+#legenda{
+    text-align: left;
+}
+
+#legenda h3{
+    margin-left: 5vh;
+    font-size: 2em;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    color: #333;
+}
+
+#legenda ul{
+    margin-left: 8vh;
+    margin-right: 8vh;
+    margin-bottom: 4vh;
+    display: flex;
+    overflow:auto;
+}
+
+#legenda ul li{
+    margin-right: 3vh;
+    margin-left: 3vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #555;
+    letter-spacing: 1.2px;
+}
+
+/* Pag 17 */
+
+#p17{
+    margin-top: 10vh;
+    margin-left: 5vh;
+    margin-right: 3vh;
+    margin-bottom: 10vh;
+    padding-bottom: 10vh;
+}
+
+#p17 h2{
+    font-size: 3em;
+    margin-bottom: 6vh;
+    color: #333;
+}
+
+#p17 button{
+    margin-bottom: 2vh;
+    padding: 1vh 2vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#777;
+    font-weight: medium;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #777;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+#p17 button:hover{
+    background-color: #ebebe0;
+}
+
+#p17 button + div{
+    display:flex; 
+    float: right;
+    margin-bottom: 10vh;
+}
+
+#p17 .img img{
+    height: 90vh;
+}
+
+#p17 .img #img17r img{
+    display: none;
+ }
+
+ #p17 #testopag17{
+    margin-left: 10vh;
+    width: 350%;
+    font-size: 0.9em;
+ }
+
+ #p17 #testopag17 h3{
+    font-size: 1.5em;
+    color: #333;
+ }
+
+ #p17 #traduzionepag17{
+    margin-left: 5vh;
+    margin-right: 5vh;
+    text-align: justify;
+    color: #444;
+    width: 350%;
+    font-size: 1.1em;
+ }
+
+
+ #p17 #traduzionepag17 h3{
+    margin-bottom: 2vh;
+    font-size: 1.5em;
+    color: #333;
+ }
+
+ /* Pagina 18 */
+ #p18{
+    margin-left: 5vh;
+    margin-right: 3vh;
+    margin-bottom: 12vh;
+    padding-bottom: 110vh;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+ }
+
+ #p18 h2{
+    font-size: 3em;
+    margin-bottom: 6vh;
+    color: #333;
+}
+
+#p18 button{
+    margin-bottom: 2vh;
+    padding: 1vh 2vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#777;
+    font-weight: medium;
+    background-color: transparent;
+    border-style: solid;
+    border-color: #777;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+#p18 button:hover{
+    background-color: #ebebe0;
+}
+
+#p18 button + div{
+    display:flex; 
+    float: right;
+    margin-bottom: 10vh;
+}
+
+#p18 .img img{
+    height: 90vh;
+}
+
+#p18 .img #img18r img{
+    display: none;
+ }
+
+ #p18 #testopag18{
+    margin-left: 10vh;
+    width: 350%;
+    font-size: 0.9em;
+ }
+
+ #p18 #testopag18 h3{
+    margin-bottom: 2vh;
+    font-size: 1.5em;
+    color: #333;
+ }
+
+ #p18 #traduzionepag18{
+    margin-left: 5vh;
+    margin-right: 5vh;
+    text-align: justify;
+    color: #444;
+    width: 350%;
+    font-size: 1.1em;
+ }
+
+ #p18 #traduzionepag18 h3{
+    margin-bottom: 2vh;
+    font-size: 1.5em;
+    color: #333;
+ }
+
+ /* Bibliografia */
+ 
+ #bibl{
+    margin-left: 5vh;
+    margin-right: 25vh;
+    margin-bottom: 10vh;
+ }
+
+ #bibl h2{
+    margin-bottom: 2vh;
+    font-size: 2em;
+    color: #888;
+ }
+
+ #bibl li{
+    margin-left: 3vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #999;
+ }
+
+ /* Riferimenti */
+
+ #ref{
+    margin-right: 3vh;
+    padding-top: 3vh;
+    padding-left: 5vh;
+    padding-bottom: 2vh;
+    width: 100%;
+    background-color: #555;
+ }
+
+ #ref h2{
+    color: #fff;
+    margin-bottom: 1vh;
+ }
+
+ #ref div p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size: small;
+ }
+
+ #ref div b{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size: small;
+    font-weight: lighter;
+ }
+
+ #ref div i{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size: small;
+    font-weight: lighter;
+ }
+
+ /*Media Queries*/
+ @media only screen and (max-width: 575.98px){
+
+    body{
+        background-image: url("FDS.png");
+        background-attachment:scroll;
+        background-repeat: no-repeat;
+        background-size: 30vh;
+        background-position: 150% 6%;
+    }
+
+    nav ul li a{
+        font-size: 0.7em;
+        letter-spacing: 1.5px;
+    }
+
+    #intro div{
+        margin-top: 3vh;
+        margin-left: 3vh;
+    }
+    
+    #intro h1{
+        margin-bottom: 2vh;
+        font-size: 2em;
+    }
+    
+    #intro h2{
+        font-size: 1.2em;
+       margin-bottom: 3vh;
+    }
+
+    #intro h3{
+        font-size: 0.8em;
+       margin-bottom: 3vh;
+    }
+
+    #intro div + img{
+        position:absolute;
+        left: 33vh;
+        height: 38vh;
+        margin-top: 15vh;
+    }
+
+    #car h3{
+        font-size: 1.2em;
+    }
+
+    #car div ul li{
+        font-size: 0.7em;
+    }
+
+    #legenda h3{
+        font-size: 1.2em;
+    }
+
+    #legenda ul li{
+        font-size: 0.7em;
+    }
+
+    #p17 h2{
+        font-size: 1.5em;
+    }
+
+    #p17 .img img{
+        height: 60vh;
+    }
+
+    #p17 #testopag17{
+        margin-left: 5vh;
+        font-size: 0.2em;
+     }
+
+     #p17 #traduzionepag17{
+        margin-left: 2vh;
+        margin-right: 2vh;
+        font-size: 0.3em;
+     }
+    
+     #p18{
+        border-bottom-style: none;
+     }
+    
+     #p18 h2{
+        font-size: 1.5em;
+    }
+    
+    #p18 .img img{
+        height: 60vh;
+    }
+    
+     #p18 #testopag18{
+        margin-left: 5vh;
+        width: 650%;
+        font-size: 0.4em;
+     }
+    
+     #p18 #testopag18 h3{
+        font-size: 1.5em;
+     }
+    
+     #p18 #traduzionepag18{
+        margin-left: 2vh;
+        margin-right: 2vh;
+        width: 650%;
+        font-size: 0.3em;
+     }
+
+    #bibl h2{
+        font-size: 1.2em;
+    }
+
+    #bibl li{
+        font-size: 0.7em;
+    }
+
+    #ref h2{
+        font-size: 1em;
+    }
+
+    #ref div b{
+        font-size: 0.7em;
+    }
+ }
+
+ @media only screen and (max-width: 767.98px){
+
+    body{
+        background-image: url("FDS.png");
+        background-attachment:scroll;
+        background-repeat: no-repeat;
+        background-size: 50vh;
+        background-position: 120% 6%;
+    }
+
+    nav ul li a{
+        font-size: 0.8em;
+    }
+
+    #intro div{
+        margin-top: 1vh;
+        margin-left: 3vh;
+    }
+    
+    #intro h1{
+        margin-bottom: 2vh;
+        font-size: 2.5em;
+    }
+    
+    #intro h2{
+        font-size: 1.5em;
+       margin-bottom: 3vh;
+    }
+
+    #intro h3{
+        font-size: 1em;
+        margin-bottom: 8vh;
+    }
+
+    #car h3{
+        font-size: 1.5em;
+    }
+
+    #car div ul li{
+        font-size: 0.8em;
+    }
+
+    #legenda h3{
+        font-size: 1.5em;
+    }
+
+    #legenda ul li{
+        font-size: 0.8em;
+    }
+
+    #p17 h2{
+        font-size: 2em;
+    }
+
+    #p17 .img img{
+        height: 50vh;
+    }
+
+    #p17 #testopag17{
+        margin-left: 5vh;
+        font-size: 0.2em;
+     }
+
+     #p17 #traduzionepag17{
+        margin-left: 2vh;
+        margin-right: 2vh;
+        text-align: justify;
+        font-size: 0.3em;
+     }
+
+     #p18{
+        border-bottom-style: none;
+     }
+
+     #p18 h2{
+        font-size: 2em;
+    }
+
+    #p18 .img img{
+        height: 50vh;
+    }
+    
+     #p18 #testopag18{
+        margin-left: 5vh;
+        width: 650%;
+        font-size: 0.9em;
+     }
+    
+     #p18 #testopag18 h3{
+        margin-bottom: 2vh;
+        font-size: 1.5em;
+     }
+    
+     #p18 #traduzionepag18{
+        margin-left: 2vh;
+        margin-right: 2vh;
+        text-align: justify;
+        font-size: 0.3em;
+     }
+
+    #bibl h2{
+        font-size: 1.5em;
+    }
+
+    #bibl li{
+        font-size: 0.8em;
+    }
+
+    #ref h2{
+        font-size: 1.2em;
+    }
+
+    #ref div b{
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    body{
+        background-image: url("FDS.png");
+        background-attachment:scroll;
+        background-repeat: no-repeat;
+        background-size: 55vh;
+        background-position: 100% 4%;
+    }
+
+    #p17 .img img{
+        height: 60vh;
+        margin-top: 5vh;
+    }
+
+    #p17 #testopag17{
+        margin-left: 3vh;
+        width: 750%;
+        font-size: 0.75em;
+     }
+
+     #p17 #traduzionepag17{
+        margin-left: 2vh;
+        margin-right: 2vh;
+        text-align: justify;
+        font-size: 0.65em;
+     }
+    
+    #p18 .img img{
+        height: 60vh;
+        margin-top: 5vh;
+    }
+    
+     #p18 #testopag18{
+        margin-left: 3vh;
+        width: 750%;
+        font-size: 0.75em;
+     }
+    
+     #p18 #traduzionepag18{
+        margin-left: 2vh;
+        margin-right: 2vh;
+        font-size: 0.65em;
+     }
+
+}

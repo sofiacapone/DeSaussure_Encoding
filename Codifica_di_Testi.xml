@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="stile.xsl"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+<TEI>
+    <teiHeader xml:lang="it"> <!-- Contiene i metadati descrittivi e dichiarativi -->
+        
+        <fileDesc><!-- Contiene la descrizione bibliografica completa della risorsa, obbligatorio -->
+            
+            <titleStmt><!-- Contiene le informazioni sul titolo della risorsa, obbligatorio -->
+                <title xml:lang="fr">Trois premières conférences à l'Universitè</title>
+                <title>Tre prime conferenze all'Università di Ginevra: versione elettronica</title>
+                <author ref="#FDS">Ferdinand De Saussure</author>
+                <respStmt>
+                    <resp>Traduzione di:</resp>
+                    <name ref="#EF">Emanuele Fadda</name>
+                </respStmt>
+            </titleStmt>
+
+            <editionStmt><!-- Contiene le informazioni sull'edizione della risorsa -->
+                <edition>Versione elettronica - <date when="2022-08">agosto 2022</date></edition>
+                <respStmt>
+                    <resp>Codifica a cura di:</resp>
+                        <name xml:id="SC">Sofia Capone</name>
+                        <name xml:id="MC">Matilde Cicalini</name>
+                        <name xml:id="VP">Viola Portunato</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Progetto coordinato da:</resp>
+                    <name xml:id="AMDG">Angelo Mario Del Grosso</name>
+                </respStmt>
+            </editionStmt>
+
+            <publicationStmt><!-- Contiene le informazioni sulla pubblicazione del documento digitale -->
+                <publisher>Università di Pisa</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <address>
+                    <street>Lungarno Antonio Pacinotti, 43</street>
+                    <postCode>56127</postCode>
+                    <name>Pisa</name>
+                    <name>Italia</name>
+                </address>
+                <availability>
+                    <p>Opera ad accesso libero</p>
+                </availability>
+                <date when="2022">2022</date>
+            </publicationStmt>
+
+            <notesStmt>
+                <note>Il presente file è parte di un progetto più ampio cui hanno già lavorato
+                altri studenti dell'Università di Pisa del corso di Informatica Umanistica, procedendo con la codifica di altre pagine
+                sempre estratte dagli stessi appunti di <persName ref="#FDS">Ferdinand De Saussure</persName></note> 
+            </notesStmt>
+
+            <sourceDesc><!-- Contiene le informazioni sulla fonte -->
+                <msDesc><!-- Contiene la descrizione del manoscritto -->
+                    <msIdentifier>
+                        <country>Svizzera</country>  
+                        <settlement ref="#Ginevra">Ginevra</settlement>
+                        <repository role="library" ref="https://archives.bge-geneve.ch/">Biblioteca di <placeName ref="#Ginevra">Ginevra</placeName></repository> 
+                        <idno>BGE Ms.fr.3951/1.1-3</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <msItem>
+                            <author ref="#FDS">Ferdinand De Saussure</author> 
+                            <title xml:lang="fr">Trois premières conférences à l'Universitè (cours d'ouverture, <date when="1891-11">Novembre 1891</date>)</title>
+                        </msItem>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="folio">
+                            <supportDesc material="paper">
+                                <support>Fogli di <material>carta</material></support>
+                                <extent> 67 pagine e 1 foglietto, precisamente 30 + 15 + 22 pagine e 1 foglietto</extent>
+                                <condition>In generale, le pagine si conservano in buone condizioni</condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1" ruledLines="20 30">
+                                    <p>In ogni pagina si contano, in media, tra le 20 e le 30 righe, senza considerare ulteriori elementi aggiuntivi
+                                    quali cancellature, note a margine e a piè di pagina</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc hands="1">
+                            <p>Il testo è stato scritto dalla sola mano dell'autore</p>
+                        </handDesc>
+                        <decoDesc> 
+                            <p>Nessuna decorazione</p>
+                        </decoDesc>
+                    </physDesc>
+                    
+                    <history>
+                        <summary>Il testo, suddiviso in 3 sezioni, raccoglie alcuni appunti di <persName ref="#FDS">Ferdinand De Saussure</persName></summary>
+                        <origin notAfter="1891-11">
+                            <p>Gli appunti qui raccolti da <persName ref="#FDS">Ferdinand De Saussure</persName>, sarebbero stati parzialmente esposti durante le prime tre lezioni del corso di
+                            fonetica greca e latina (<foreign xml:lang="fr">Phonétique du grec et du latin</foreign>) del <date when="1891-11-06">6</date>, <date when="1891-11-10">10</date> e <date when="1891-11-13">13 novembre 1891</date> 
+                            all'Università di <placeName ref="#Ginevra">Ginevra</placeName></p> 
+                        </origin>
+                        <acquisition>
+                            <p>Il manoscritto sarebbe stato in seguito acquisito dalla Biblioteca di <placeName>Ginevra</placeName></p>
+                        </acquisition>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+
+        </fileDesc>
+
+        <encodingDesc> 
+
+            <projectDesc>
+                <p>La codifica delle seguenti pagine è stata realizzata per il progetto d'esame di Codifica di Testi</p>
+            </projectDesc>
+
+            <editorialDecl>
+                <punctuation marks="all" placement="internal">
+                    <p>Tutti i segni di punteggiatura presenti nella fonte sono stati mantenuti</p>
+                </punctuation>
+                <quotation marks="all">
+                    <p>Tutte quante le virgolette nella fonte sono state mantenute</p>
+                </quotation>
+                <hyphenation eol="all">
+                    <p>La divisione in sillabe al termine di riga è stata sempre mantenuta</p>
+                </hyphenation> <!-- eol="some"? -->
+                <segmentation>
+                    <p>Il testo è stato suddiviso in sezioni, pericopi e paragrafi, rispettivamente marcati dagli elementi <gi>div</gi>, <gi>ab</gi> e <gi>p</gi></p>
+                </segmentation>
+                <stdVals>
+                    <p>Il valore dell'attributo <att>when</att> all'interno dell'elemento <gi>date</gi> viene inserito nell'ordine <val>AA-MM-GG</val></p>
+                </stdVals>
+                <interpretation>
+                    <p>I nomi di persona, di luogo, le date e gli elementi terminologici sono tutti marcati</p> 
+                </interpretation>
+            </editorialDecl>
+
+            <refsDecl>
+                <p>Ogni riferimento all'interno della codifica è stato realizzato attraverso gli opportuni attributi <att>xml:id</att>, <att>ref</att> e <att>target</att>. 
+                In particolare, ogni elemento terminologico è stato provvisto di un attributo <att>ref</att> che lo rimanda al termine corrispondente nella sezione di Terminologia
+                provvisto dell'attributo <att>xml:id</att>, a cui è collegata una definizione grazie all'elemento <gi>gloss</gi> provvisto a sua volta dell'attributo <att>target</att></p>
+            </refsDecl>
+            
+        </encodingDesc>
+
+        <profileDesc> <!-- Contiene la descrizione dettagliata dei vari aspetti non-bibliografici del documento -->
+            <creation>
+                <date when="1891-11">Novembre 1891</date>
+                <rs type="city" ref="#Ginevra">Ginevra</rs>
+            </creation>
+            <langUsage>
+                <language ident="fr" usage="95%">Francese</language>
+                <language ident="la" usage="2%">Latino</language>
+                <language ident="gr" usage="2%">Greco</language>
+                <language ident="sav" usage="1%">Savoiardo</language>
+            </langUsage>
+            <textDesc>
+                <channel mode="ws"/>
+                <constitution type="single"/> <!-- Specifica la composizone interna di un testo-->
+                <derivation type="original"/>
+                <domain type="education" /> <!-- Sepcifica il campo di applicazione del testo-->
+                <factuality type="fact" /> <!-- Specifica il grado di fantasia del testo-->
+                <interaction type="partial" active="singular" passive="group" />
+                <preparedness type="draft" /> <!-- Specifica che si tratta di una bozza-->
+                <purpose type="inform" degree="high" /> <!-- Specifica lo scopo/funzione comunicativa del testo-->
+            </textDesc>
+            <settingDesc>
+                <setting>
+                    <name>Testi registrati nella Biblioteca di <placeName ref="#Ginevra">Ginevra</placeName>, <country>Svizzera</country></name>
+                    <time><date when="1891-11">Novembre 1891</date></time>
+                </setting>
+            </settingDesc>
+        </profileDesc>
+
+    </teiHeader>
+
+    <facsimile>
+        <!--Prolusioni 3, pag 17-->
+        <surface xml:id="prol3_pag17" n="17">
+            <graphic url='prol3_pag17.jpg' width='2043px' height='3022px' />
+            <zone ulx="19" uly="5" lrx="2027" lry="3193" xml:id="pag17_intera" />
+            <zone ulx="543" uly="176" lrx="1978" lry="285" xml:id="pag17_line1"/>
+            <zone ulx="456" uly="311" lrx="2029" lry="386" xml:id="pag17_line2"/>
+            <zone ulx="466" uly="411" lrx="2028" lry="500" xml:id="pag17_line3"/>
+            <zone ulx="657" uly="581" lrx="2028" lry="690" xml:id="pag17_line4"/>
+            <zone ulx="468" uly="677" lrx="1962" lry="782" xml:id="pag17_line5"/>
+            <zone ulx="475" uly="794" lrx="2019" lry="887" xml:id="pag17_line6"/>
+            <zone ulx="474" uly="897" lrx="1977" lry="977" xml:id="pag17_line7"/>
+            <zone ulx="474" uly="993" lrx="1996" lry="1095" xml:id="pag17_line8"/>
+            <zone ulx="475" uly="1103" lrx="1989" lry="1185" xml:id="pag17_line9"/>
+            <zone ulx="478" uly="1200" lrx="1992" lry="1305" xml:id="pag17_line10"/>
+            <zone ulx="481" uly="1314" lrx="1953" lry="1388" xml:id="pag17_line11"/>
+            <zone ulx="498" uly="1391" lrx="1947" lry="1542" xml:id="pag17_line12"/>
+            <zone ulx="514" uly="1499" lrx="2025" lry="1626" xml:id="pag17_line13"/>
+            <zone ulx="67" uly="1503" lrx="444" lry="1808" xml:id="pag17_note1"/><!--Nota a margine-->
+            <zone ulx="520" uly="1590" lrx="2004" lry="1736" xml:id="pag17_line14"/>
+            <zone ulx="519" uly="1763" lrx="2017" lry="1829" xml:id="pag17_line15"/>
+            <zone ulx="526" uly="1845" lrx="2004" lry="1940" xml:id="pag17_line16"/>
+            <zone ulx="525" uly="1941" lrx="1962" lry="2049" xml:id="pag17_line17"/>
+            <zone ulx="519" uly="2037" lrx="1999" lry="2177" xml:id="pag17_line18"/>
+            <zone ulx="51" uly="2068" lrx="399" lry="2338" xml:id="pag17_note2"/><!--Nota a margine-->
+            <zone ulx="532" uly="2147" lrx="1992" lry="2283" xml:id="pag17_line19"/>
+            <zone ulx="540" uly="2276" lrx="2024" lry="2376" xml:id="pag17_line20" />
+            <zone ulx="539" uly="2384" lrx="1995" lry="2456" xml:id="pag17_line21"/>
+            <zone ulx="552" uly="2482" lrx="2017" lry="2559" xml:id="pag17_line22"/>
+            <zone ulx="552" uly="2604" lrx="2022" lry="2678" xml:id="pag17_line23"/>
+            <zone ulx="555" uly="2716" lrx="1999" lry="2798" xml:id="pag17_line24"/>
+            <zone ulx="572" uly="2834" lrx="2022" lry="2915" xml:id="pag17_line25"/>
+            <zone ulx="570" uly="2934" lrx="1997" lry="3006" xml:id="pag17_line26"/>
+            <zone ulx="577" uly="3037" lrx="2016" lry="3105" xml:id="pag17_line27"/>
+            <zone ulx="91" uly="3068" lrx="543" lry="3218" xml:id="pag17_note3"/><!--Nota a margine-->
+            <zone ulx="569" uly="3142" lrx="2012" lry="3213" xml:id="pag17_line28"/>
+        </surface>
+        <!--Prolusioni 3, pag 17 retro-->
+        <surface xml:id="pag17_retro" n="2">
+            <graphic url='pag17_retro.jpg' width='1990px' height='3145px' />
+            <zone ulx="3" uly="-4" lrx="1983" lry="3136" xml:id="Pag17_Retro" />
+        </surface>
+        <!--Prolusioni 3, pag 18-->
+        <surface xml:id="prol3_pag18" n="18">
+            <graphic url='prol3_pag18.jpg' width='2056.86666px' height='3202.86666px' />
+            <zone ulx="132" uly="20" lrx="2036" lry="3193" xml:id="pag18_intera" />
+            <zone ulx="397" uly="93" lrx="1972" lry="282"  xml:id="pag18_line1"/>
+            <zone ulx="397" uly="302" lrx="2024" lry="407" xml:id="pag18_line2"/>
+            <zone ulx="411" uly="423" lrx="2041" lry="515" xml:id="pag18_line3"/>
+            <zone ulx="387" uly="538" lrx="2017" lry="608" xml:id="pag18_line4"/>
+            <zone ulx="405" uly="626" lrx="1979" lry="694" xml:id="pag18_line5"/>
+            <zone ulx="388" uly="727" lrx="1977" lry="793" xml:id="pag18_line6"/>
+            <zone ulx="33" uly="746" lrx="339" lry="1020"  xml:id="pag18_note3"/><!--Nota a margine-->
+            <zone ulx="447" uly="837" lrx="2010" lry="901" xml:id="pag18_line7"/>
+            <zone ulx="414" uly="943" lrx="1968" lry="995" xml:id="pag18_line8"/>
+            <zone ulx="1550" uly="3181" lrx="2008" lry="3200" xml:id="pag18_line9"/>
+            <zone ulx="1042" uly="3127" lrx="2011" lry="3199" xml:id="pag18_line10"/>
+            <zone ulx="474" uly="3047" lrx="2033" lry="3166" xml:id="pag18_line11"/>
+            <zone ulx="461" uly="2946" lrx="1988" lry="3065" xml:id="pag18_line12"/>
+            <zone ulx="42" uly="2830" lrx="2010" lry="2992" xml:id="pag18_line13"/>
+            <zone ulx="454" uly="2730" lrx="2008" lry="2875" xml:id="pag18_line14"/>
+            <zone ulx="72" uly="2616" lrx="2012" lry="2762" xml:id="pag18_line15"/>
+            <zone ulx="430" uly="2530" lrx="2006" lry="2664" xml:id="pag18_line16"/>
+            <zone ulx="211" uly="2428" lrx="2009" lry="2572" xml:id="pag18_line17"/>
+            <zone ulx="415" uly="2296" lrx="2017" lry="2443" xml:id="pag18_line18"/>
+            <zone ulx="415" uly="2183" lrx="2012" lry="2341" xml:id="pag18_line19"/>
+            <zone ulx="594" uly="2058" lrx="1993" lry="2216" xml:id="pag18_line20"/>
+            <zone ulx="407" uly="2016" lrx="992" lry="2083" xml:id="pag18_line21"/>
+            <zone ulx="424" uly="1842" lrx="2022" lry="2003" xml:id="pag18_line22"/>
+            <zone ulx="425" uly="1750" lrx="2006" lry="1900" xml:id="pag18_line23"/>
+            <zone ulx="410" uly="1645" lrx="2029" lry="1793" xml:id="pag18_line24"/>
+            <zone ulx="425" uly="1519" lrx="2028" lry="1681" xml:id="pag18_line25"/>
+            <zone ulx="638" uly="1418" lrx="2022" lry="1552" xml:id="pag18_line26"/>
+            <zone ulx="194" uly="1344" lrx="2021" lry="1531" xml:id="pag18_line27"/>
+            <zone ulx="403" uly="1280" lrx="2018" lry="1435" xml:id="pag18_line28"/>
+            <zone ulx="444" uly="1188" lrx="2008" lry="1336" xml:id="pag18_line29"/>
+            <zone ulx="442" uly="1094" lrx="2005" lry="1232" xml:id="pag18_line30"/>
+            <zone ulx="431" uly="988" lrx="1981" lry="1141" xml:id="pag18_line31"/> 
+        </surface>
+            <!--Prolusioni 3, pag 18 retro-->
+            <surface xml:id="pag18_retro" n="2">
+                <graphic url='pag18_retro.jpg' width='2031.6px' height='3203.6px'/>
+                <zone ulx="4" uly="4" lrx="2027" lry="3202" />
+            </surface>
+    </facsimile>
+
+    <text xml:lang="fr" xml:id="pag_17-18" subtype="manuscript">
+        <body>
+            <div type="pagina" n="17">
+                <pb n="17" facs="#pag17_intera" />
+                        <ab type="pericope" xml:id="pag_17_per_1" n="1">
+                        <lb xml:id="pag_17_line_1" n="1" facs="#pag17_line1"/>
+                        Si ce <term ref="#principe">principe</term> peut sembler <term ref="#abord">au <choice><abbr resp="#FDS" type="superscription">1ere</abbr><expan  resp="#SB">premier</expan></choice> 
+                        <lb xml:id="pag_17_line_2" n="2" facs="#pag17_line2"/>
+                        abord</term> un peu obscur, il va devenir <term ref="#immediatement">immé-
+                        <lb xml:id="pag_17_line_3" n="3" facs="#pag17_line3"/>
+                        diatement</term>,  j’en ai la confiance, d’une clarté...
+                        </ab>
+                        <ab type="pericope" xml:id="pag_17_per_2" n="2">
+                        <lb xml:id="pag_17_line_4" n="4" facs="#pag17_line4"/>
+                        Lorsqu’on essaie de tracer <subst><del rend="overstrike"><gap reason="illegible" unit="word" quantity="1"></gap></del> <add hand="#FDS" place="above">sur la <term ref="#carte">carte</term></add></subst>
+                        <lb xml:id="pag_17_line_5" n="5" facs="#pag17_line5"/> 
+                        les <term ref="#limites">limites</term> d’un <term ref="#dialecte">dialecte</term> <emph rend="underline"><term ref="#parfaitement">parfaitement</term> connu</emph>, on
+                        <lb xml:id="pag_17_line_6" n="6" facs="#pag17_line6"/>      
+                        <del rend="overtstrike">n'y <unclear reason="illegible">passeur</unclear>pas, ou si on <unclear reason="illegible">y pa</unclear></del> est évi-
+                        <lb xml:id="pag_17_line_7" n="7" facs="#pag17_line7"/> 
+                        demment obligé de dire quels sont les
+                        <lb xml:id="pag_17_line_8" n="8" facs="#pag17_line8"/>  
+                        <term ref="#car">caractères</term> qu’on <subst><del rend="overstrike">adopte</del> <add hand="#FDS" place="above">reconnaît</add></subst> comme <term ref="#distinctifs">distinctifs</term> 
+                        <lb xml:id="pag_17_line_9" n="9" facs="#pag17_line9"/> 
+                        de ce <term ref="#dialecte"><choice><abbr resp="#FDS">dial<am>.</am></abbr><expan resp="#SB"><ex>ecte</ex></expan></choice></term> par rapport aux <term ref="#dcirc"><choice><abbr resp="#FDS">dial<am>.</am></abbr><expan resp="#SB"><ex>ecte</ex></expan></choice> <distinct>circon-
+                        <lb xml:id="pag_17_line_10" n="10" facs="#pag17_line10"/> 
+                        voisins</distinct></term>.</ab><ab type="pericope" xml:id="pag_17_per_3" n="3"> Par <term ref="#exemple"><choice><abbr resp="#FDS">exe<am>.</am></abbr><expan resp="#SB"><ex>mple</ex></expan></choice></term>, si j’admets qu’il existe 
+                        <lb xml:id="pag_17_line_11" n="11" facs="#pag17_line11"/> 
+                        <choice><abbr resp="#FDS">1</abbr><expan resp="#SB">un</expan></choice> <term ref="#dsav"><choice><abbr resp="#FDS">dial<am>.</am></abbr><expan resp="#SB"><ex>ecte</ex></expan></choice> savoyard</term>, mon <term ref="#premiere"><choice><abbr resp="#FDS" type="superscription">1ere</abbr><expan resp="#SB">premier</expan></choice></term> <term ref="#devoir">devoir</term> est de 
+                        <lb xml:id="pag_17_line_12" n="12" facs="#pag17_line12"/> 
+                        poser en quoi ce <term ref="#dialecte"><choice><abbr resp="#FDS">dial<am>.</am></abbr><expan resp="#SB"><ex>ecte</ex></expan></choice></term> est <term ref="#différent">différent</term> de <choice><abbr resp="#FDS">tt</abbr><expan resp="#SB">tout</expan></choice> 
+                        <lb xml:id="pag_17_line_13" n="13" facs="#pag17_line13"/> 
+                        autre <term ref="#dfran"><choice><abbr resp="#FDS">dial<am>.</am></abbr><expan resp="#SB"><ex>ecte</ex></expan></choice> français</term>.
+                        <add>
+                            <note xml:id="pag_17_note_1" facs="#pag17_note1" n="1" resp="#FDS" place="margin">
+                                [ d’autre 
+                                part 
+                                <emph rend="underline">un</emph> 
+                                en lui <choice><orig resp="#FDS"><gap reason="illegible"/></orig><reg resp="#SB">même</reg></choice>
+                            </note>
+                        </add> <!-- NOTA A MARGINE-->
+                        </ab>
+                        <ab type="pericope" xml:id="pag_17_per_4" n="4">Je vais donc me mettre
+                        <lb xml:id="pag_17_line_14" n="14" facs="#pag17_line14"/> 
+                        à la recherche de ces <term ref="#ccdd">caractères <add hand="#FDS" place="above">communs de distinction</add></term>.</ab><ab type="pericope" xml:id="pag_17_per_5" n="5">Je puis
+                        <lb xml:id="pag_17_line_15" n="15" facs="#pag17_line15"/> 
+                        <term ref="#imaginer">imaginer</term> <term ref="#abord">au <choice><abbr resp="#FDS" type="superscription">1ere</abbr><expan resp="#SB">premier</expan></choice> abord</term> par <term ref="exemple"><choice><abbr resp="#FDS">exe<am>.</am></abbr><expan resp="#SB"><ex>mple</ex></expan></choice></term> que la <term ref="#conservation">conser-
+                        <lb xml:id="pag_17_line_16" n="16" facs="#pag17_line16"/> 
+                        vation</term> de l’<term ref="#a"><emph rend="undelined">a</emph> final <add hand="#FDS" place="above">atone</add></term> <term ref="#latin" type="glottonimo">latin</term> comme dans <mentioned xml:id="sav1" xml:lang="sav" rend="underline">feña</mentioned> 
+                        <lb xml:id="pag_17_line_17" n="17" facs="#pag17_line17"/> 
+                        <gloss target="#sav1" xml:lang="fr">la femme</gloss>, <mentioned xml:id="sav2" xml:lang="sav" rend="underline">Θenva</mentioned> <gloss target="#sav2" xml:lang="fr">Genève</gloss>, <subst><del rend="overstrike"><gap reason="illegible" unit="word" quantity="1"></gap></del> <add hand="#FDS" place="above">qui est</add></subst> <choice><abbr resp="#FDS">1</abbr><expan resp="#SB">un</expan></choice> <term ref="#sicom">signe <add resp="#FDS" place="above">commun</add></term> du 
+                        <lb xml:id="pag_17_line_18" n="18" facs="#pag17_line18"/> 
+                        <term ref="#dsav"><choice><abbr resp="#FDS">dial<am>.</am></abbr><expan resp="#SB"><ex>ecte</ex></expan></choice> savoyard</term>,  mais, en portant <choice><abbr resp="#FDS">+</abbr><expan resp="#SB">plus</expan></choice> loin mon
+                        <add>
+                            <note xml:id="pag_17_note_2" facs="#pag17_note2" n="2" resp="#FDS" place="margin">
+                                [ est aussi <choice><abbr resp="#FDS">1</abbr><expan resp="#SB">un</expan></choice> 
+                                <term ref="#sdd">signe distinctif 
+                                <choice><abbr resp="#FDS">dial<am>.</am></abbr><expan resp="#SB"><ex>ectal</ex></expan></choice></term> 
+                            </note><!-- NOTA A MARGINE-->
+                        </add>
+                        <lb xml:id="pag_17_line_19" n="19" facs="#pag17_line19"/> 
+                        <term ref="#observation">observation</term>, je constaterai que cela est <term ref="#commun">commun</term> 
+                        <lb xml:id="pag_17_line_20" n="20" facs="#pag17_line20"/>
+                        au <term ref="#dsav"><choice><abbr resp="#FDS">dial<am>.</am></abbr><expan resp="#SB"><ex>ecte</ex></expan></choice> savoyard</term>, et à tout le <name type="place">Sud de la France;</name>
+                        </ab>
+                        <ab type="pericope" xml:id="pag_17_per_6" n="6">
+                        <lb xml:id="pag_17_line_21" n="21" facs="#pag17_line21"/>
+                        il n'y a donc là aucun <term ref="#caractère">caractère</term> <term ref="#distinctifs">distinctif</term>
+                        </ab>
+                        <ab type="pericope" xml:id="pag_17_per_7" n="7">
+                        <lb xml:id="pag_17_line_22" n="22" facs="#pag17_line22"/>
+                        <del rend="overstrike"><gap reason="illegible" quantity="1"></gap></del> je remarque alors que le <name type="place">Sud de la France</name>
+                        <lb xml:id="pag_17_line_23" n="23" facs="#pag17_line23"/>
+                        n'a pas changé le <term ref="#groupe">groupe</term> <emph rend="underline">ça</emph> <term ref="#latin" type="glottonimo">latin</term> en <mentioned rend="underline">tša</mentioned>,  
+                        <lb xml:id="pag_17_line_24" n="24" facs="#pag17_line24"/>
+                        <mentioned rend="underline">ša</mentioned> ou autre chose, <add hand="#FDS" place="above"><mentioned xml:id="lat" xml:lang="lat" rend="underline">canto</mentioned></add>, tandis qu'en <term ref="#savoyard" type="glottonimo">savoyard</term>
+                        <lb xml:id="pag_17_line_25" n="25" facs="#pag17_line25"/>
+                        il y a changement: <mentioned xml:id="sav3" xml:lang="sav" rend="underline">θãtå;</mentioned></ab><ab type="pericope" xml:id="pag_17_per_8" n="8">ce <term ref="#caractère">caractère</term> sera-
+                        <lb xml:id="pag_17_line_26" n="26" facs="#pag17_line26"/>
+                        t-il <choice><abbr resp="#FDS">meill<am>.</am></abbr><expan resp="#SB"><ex>eur</ex></expan></choice>;</ab><ab type="pericope" xml:id="pag_17_per_9" n="9"> nullement parce que ce <term ref="#caractère">caractère</term>-là
+                        <lb xml:id="pag_17_line_27" n="27" facs="#pag17_line27"/>
+                        est <term ref="#commun">commun</term> en revanche avec le <name type="place">Nord Est</name>
+                        <add>
+                            <note xml:id="pag_17_note_3" facs="#pag17_note3" n="3" resp="#FDS" place="margin">
+                                <name type="place">Gex</name>,la <name type="place">Franche Comté</name>, <name type="place">Paris</name>
+                            </note><!-- NOTA A MARGINE-->
+                        </add>
+                        <lb xml:id="pag_17_line_28" n="28" facs="#pag17_line28"/>
+                        du territoire, relie le <term ref="#savoyard" type="glottonimo">savoyard</term> avec le pays de
+                        </ab>
+            </div>
+            <div type="pagina" n="18">
+                <pb n="18" facs="#pag18_intera" />
+                    <ab type="pericope" xml:id="pag_18_per_1" n="1">
+                    <lb xml:id="pag_18_line_1" n="1" facs="#pag18_line1"/>
+                    <orig resp="#FDS">je chercherai alors de</orig><reg>Je serai attentif alors à chercher des</reg> <term ref="#caractères">caractères</term> <choice><abbr resp="#FDS">+</abbr><expan resp="#SB">plus</expan></choice> <term ref="#locaux">locaux</term>;
+                    </ab>
+                    <ab type="pericope" xml:id="pag_18_per_2" n="2">
+                    <lb xml:id="pag_18_line_2" n="2" facs="#pag18_line2"/>
+                    je prendrai par <choice><abbr resp="#FDS">ex<am>.</am></abbr><expan resp="#SB"><ex>emple</ex></expan></choice> le fait du <term ref="#dal">déplacement
+                    <lb xml:id="pag_18_line_3" n="3" facs="#pag18_line3"/>
+                    de l'accent latin</term> <choice><abbr resp="#FDS">d</abbr><expan resp="#SB"><ex>ans</ex></expan></choice>le <term ref="#patois">patois</term> <add><term ref="#savoyard" type="glottonimo"><choice><abbr resp="#FDS">sav<am>.</am></abbr><expan resp="#SB"><ex>oyard</ex></expan></choice></term></add>la <mentioned xml:id="sav4" xml:lang="savt" rend="underline">lná</mentioned>, la <mentioned xml:id="sav5" xml:lang="savt" rend="underline">spá;</mentioned>;
+                    <lb xml:id="pag_18_line_4" n="4" facs="#pag18_line4"/>
+                    mais je constate bientôt que ce <term ref="#phénomène">phénomène</term>
+                    <lb xml:id="pag_18_line_5" n="5" facs="#pag18_line5"/>
+                    d'une part n'atteint qu'une partie de la
+                    <lb xml:id="pag_18_line_6" n="6" facs="#pag18_line6"/>
+                    <name type="place">Savoie</name>, et que d'autre part il se retrouve
+                    <add>
+                        <note xml:id="pag_18_note_1" facs="#pag18_note1" n="1" resp="#FDS" place="margin">
+                            n'est donc pas <choice><abbr resp="#FDS">1</abbr><expan resp="#SB">un</expan></choice> <term ref="#caractère">caractère<choice><abbr resp="#FDS">car<am>.</am></abbr><expan resp="#SB"><ex>actère</ex></expan></choice></term> <term ref="#commun">commun</term>
+                        </note><!-- NOTA A MARGINE-->
+                    </add>
+                    <lb xml:id="pag_18_line_7" n="7" facs="#pag18_line7"/>
+                    en <name type="place">Valais</name> d'<choice><abbr resp="#FDS">1</abbr><expan resp="#SB">une</expan></choice> part et <choice><abbr resp="#FDS">d</abbr><expan resp="#SB"><ex>ans</ex></expan></choice> la direction du
+                    <lb xml:id="pag_18_line_8" n="8" facs="#pag18_line8"/>
+                    <name type="place">Dauphiné</name> de l'autre;</ab><ab type="pericope" xml:id="pag_18_per_3" n="3"> qu’il n’est donc pas <choice><abbr resp="#FDS" type="superscription">1</abbr><expan resp="#SB">un</expan></choice>
+                            <lb xml:id="pag_18_line_9" n="2" facs="#pag18_line9"/>
+                                <term ref="#car">caractère</term><emph rend="underline"><term ref="#dist"> distinctif</term></emph>.
+                        </ab>
+                        <ab type="pericope" xml:id="pag_18_per_4" n="4"> Et ainsi de suite : il n’y
+                            <lb xml:id="pag_18_line_10" n="4" facs="#pag18_line10"/>
+                                aura jamais un <term ref="#car">caractère</term> quelconque qui
+                            <lb xml:id="pag_18_line_11" n="5" facs="#pag18_line11"/> 
+                                se trouve coïncider dans son <term ref="#agéo">aire géogra- 
+                            <lb xml:id="pag_18_line_12" n="6" facs="#pag18_line12"/>      
+                                phique</term> avec <choice><abbr resp="#FDS" type="superscription">1</abbr><expan resp="#SB">un</expan></choice> autre, l’un relie la <name type="place">Savoie</name> avec <name type="place">Vaud</name>, 
+                            <lb xml:id="pag_18_line_13" n="7" facs="#pag18_line13"/> 
+                                l’autre <choice><abbr resp="#FDS" type="superscription">1</abbr><expan resp="#SB">une</expan></choice> partie de la <name type="place">Savoie</name> avec <choice><abbr resp="#FDS" type="superscription">1</abbr><expan resp="#SB">une</expan></choice> partie du <name type="place">Valais</name>, le <choice><abbr resp="#FDS" type="superscription">3e</abbr><expan resp="#SB">troisième</expan></choice> une...
+                        </ab>
+                        <ab type="pericope" xml:id="pag_18_per_5" n="5">
+                            <lb xml:id="pag_18_line_14" n="14" facs="#pag18_line14"/> 
+                                On arrivera donc enfin à comprendre
+                            <lb xml:id="pag_18_line_15" n="15" facs="#pag18_line15"/> 
+                                que l’<term ref="#agéo">aire géographique</term> <emph rend="underline"><term ref="#phén">des phénomènes</term></emph> peut
+                            <lb xml:id="pag_18_line_16" n="16" facs="#pag18_line16"/> 
+                                <term ref="#parfait">parfaitement</term>, elle, être tracée sur la <term ref="#carte">carte</term>,
+                            <lb xml:id="pag_18_line_17" n="17" facs="#pag18_line17"/> 
+                                mais qu’entreprendre de <term ref="#distingue">distinguer</term> des
+                            <lb xml:id="pag_18_line_18" n="18" facs="#pag18_line18"/>
+                                <term ref="#udialect">unités dialectales</term> est <term ref ="abs">absolument</term><term ref="#chim"> chimérique</term> et
+                            <lb xml:id="pag_18_line_19" n="19" facs="#pag18_line19"/> 
+                            <del rend="overtstrike">et <gap reason="illegible" unit="word" quantity="1"></gap></del> <term ref="#vain">vain.</term>
+                        </ab>
+                        <ab type="pericope" xml:id="pag_18_per_6" n="6">
+                            <lb xml:id="pag_18_line_20" n="20" facs="#pag18_line20"/> 
+                                Chaque <del rend="overstrike">localitè</del> <add hand="#FDS" place="above"><term ref="#région">région</term></add> se trouve placée
+                            <lb xml:id="pag_18_line_21" n="21" facs="#pag18_line21"/> 
+                                sur le parcours d'<choice><abbr resp="#FDS" type="superscription">1</abbr><expan resp="#SB">une</expan></choice> <choice><abbr resp="FDS" type ="superscription">cert<am rend="underline">n</am></abbr><expan resp="#SB">certain</expan></choice> nombre de  
+                            <lb xml:id="pag_18_line_22" n="22" facs="#pag18_line22"/>
+                                <term ref="#phénling">phénomènes linguistiques</term>, <del rend="overtstrike"><gap reason="illegible" unit="word" quantity="1"></gap></del> lesquels ont chacun
+                            <lb xml:id="pag_18_line_23" n="23" facs="#pag18_line23"/>
+                                leurs <del rend="overstrike">un</del> parcours <del rend="overtstrike"><gap reason="illegible" unit="word" quantity="1"></gap></del><add hand="#FDS" place="above"><term ref="#det">déterminés</term></add>;
+                        </ab>
+                        <ab type="pericope" xml:id="pag_18_per_7" n="7"> la somme des
+                            <lb xml:id="pag_18_line_24" n="24" facs="#pag18_line24"/>
+                                <term ref="#car">caractères</term> qui <term ref="#res">résulte</term> pour chaque <del rend="overtstrike">localitè</del>
+                            <lb xml:id="pag_18_line_25" n="25" facs="#pag18_line25"/>
+                                <add hand="#FDS" place="margin"><term ref="#région">région</term></add> de la superposition <term ref="#acc">accidentelle</term> de tel et
+                            <lb xml:id="pag_18_line_26" n="26" facs="#pag18_line26"/>
+                                tel <del rend="overtstrike"><unclear reason="illegible">care</unclear></del> phénomène est ce qui constitue<del rend="overtstrike">le</del>,
+                            <lb xml:id="pag_18_line_27" n="27" facs="#pag18_line27"/>
+                                si l’on veut, le <term ref="#dialecte">dialecte</term> de cette <del rend="overtstrike">localitè<gap reason="illegible" unit="word" quantity="2"></gap></del> <term ref="#région">région</term>.
+                        </ab>
+                        <ab type="pericope" xml:id="pag_18_per_8" n="8">
+                            <lb xml:id="pag_18_line_28" n="28" facs="#pag18_line28"/>
+                                Mais il est impossible de trouver <choice><abbr resp="#FDS" type="superscription">1</abbr><expan resp="#SB">un</expan></choice> <term ref="#car">caractère</term>
+                            <lb xml:id="pag_18_line_30" n="29" facs="#pag18_line29"/>
+                                qui <del rend="overtstrike"><gap reason="illegible" unit="word" quantity="2"></gap></del> permette de <term ref="#del">délimiter</term> ce <term ref="#dialecte">dialecte</term>
+                            <lb xml:id="pag_18_line_31" n="30" facs="#pag18_line30"/>
+                                par rapport à <choice><abbr resp="#FDS" type="superscription">tt</abbr><expan resp="#SB">tout</expan></choice> autre - à moins
+                            <lb xml:id="pag_18_line_32" n="31" facs="#pag18_line31"/>
+                                de prendre un seul village.
+                        </ab>
+            </div>
+
+            <!-- Traduzione -->
+            <div type="traduzione" xml:lang="it" resp="#EF">
+                <div type="traduzione_pag_17">
+                        <ab corresp="#pag_17_per_1" n="1">
+                            Se questo principio può sembrare di primo acchito 
+                            un po’ oscuro, diventerà immediatamente, 
+                            ne sono convinto, di una chiarezza[].
+                        </ab>
+                        <ab corresp="#pag_17_per_2" n="2">
+                            Allorché si cerca di tracciare sulla carta i limiti 
+                            di un dialetto <hi rend="italic">perfettamente conosciuto</hi>, si è 
+                            evidentemente obbligati a dire quali sono i caratteri 
+                            che si riconoscono come distintivi di questo dialetto 
+                            in rapporto ai dialetti <distinct>circonvicini</distinct>. 
+                        </ab>
+                        <ab corresp="#pag_17_per_3" n="3">
+                            Per esempio, 
+                            se ammetto che esiste un dialetto savoiardo, il mio 
+                            primo dovere è di stabilire in che cosa tale dialetto è 
+                            differente da ogni altro dialetto francese, <note corresp="pag_17_note_1">e d’altra 
+                            parte <hi rend="italic">uno</hi> in se stesso.</note> 
+                        </ab>
+                        <ab corresp="#pag_17_per_4" n="4">
+                            Mi accingo dunque  a
+                            mettermi alla ricerca di tali caratteri comuni di
+                            distinzione.
+                        </ab>
+                        <ab corresp="#pag_17_per_5" n="5">
+                            Posso immaginare anzitutto per
+                            esempio che la conservazione della <hi rend="italic">a</hi> finale atona
+                            latina come in <mentioned xml:id="trad_sav1" xml:lang="sav"><hi rend="italic">feña</hi></mentioned> “<gloss target="#trad_sav1" xml:lang="it">la donna</gloss>”, <mentioned xml:id="trad_sav2" xml:lang="sav">Q<hi rend="italic">enva</hi></mentioned> “<gloss target="#trad_sav2" xml:lang="it">Ginevra</gloss>”,
+                            che è un segno comune del dialetto savoiardo, è
+                            anche un segno distintivo dialettale ma, conducendo
+                            più avanti la mia osservazione, constaterò che ciò è comune al dialetto savoiardo e a tutto il sud della Francia;
+                        </ab>
+                        <ab corresp="#pag_17_per_6" n="6">
+                            non vi è dunque alcun carattere
+                            distintivo.  
+                        </ab> 
+                        <ab corresp="#pag_17_per_7" n="7">
+                            Osservo allora che il sud della Francia
+                            non ha cambiato il gruppo <hi rend="italic">ca</hi> latino in <hi rend="italic">tša</hi>, <hi rend="italic">sa</hi> o
+                            altro, <hi rend="italic">canto</hi>, mentre in savoiardo c’è cambiamento
+                            <hi rend="italic">Qãtå</hi>; 
+                        </ab>
+                        <ab corresp="#pag_17_per_8" n="8">
+                            tale carattere sarà migliore?
+                        </ab>
+                        <ab corresp="#pag_17_per_9" n="9">
+                            Per nulla,
+                            perché quel carattere, invece, è comune col nord-est
+                            del territorio, collega il savoiardo con il paese di <note corresp="pag_17_note_3">
+                            Gex, la Franca-Contea, Parigi.</note>
+                        </ab>
+                </div>
+                <div type="traduzione_pag_18">
+                        <ab corresp="#pag_18_per_1" n="1">
+                        Mi dedicherò
+                        allora a cercare caratteri più locali;
+                        </ab>
+                        <ab corresp="#pag_18_per_2" n="2">
+                        prenderò per esempio il fatto dello spostamento dell’accento
+                        latino nel dialetto <hi rend="italic">[patois]</hi> savoiardo la <hi rend="italic">lná</hi>, la <hi rend="italic">spá</hi>,
+                        ma constato ben presto che tale fenomeno non
+                        concerne che una parte della Savoia,<note corresp="pag_18_note_1"> e non è dunque
+                        un carattere comune</note>, e d’altra parte si ritrova in
+                        Vallese da una parte e nella direzione del Delfinato
+                        dall’altra;
+                        </ab><ab corresp="#pag_18_per_3" n="3">
+                            e dunque esso non è un 
+                            carattere <hi rend="italic">distintivo</hi>.
+                        </ab>
+                        <ab corresp="#pag_18_per_4" n="4">
+                            E così di seguito: non si 
+                            avrà mai un carattere qualsiasi che 
+                            si trova coincidere nella sua area geografica 
+                            con un altro, l’uno collega la Savoia con Vaud, 
+                            l’altro una parte della Savoia con una parte del Vallese, il terzo una [ ].
+                        </ab>
+                        <ab corresp="#pag_18_per_5" n="5">
+                            Si giungerà dunque infine a capire 
+                            che l’area geografica <hi rend="italic">dei fenomeni</hi> può 
+                            perfettamente, come tale, essere tracciata sulla carta, 
+                            ma che intraprendere la distinzione di 
+                            unità dialettali è assolutamente <distinct>chimerico</distinct> e 
+                            vano.
+                        </ab>
+                        <ab corresp="#pag_18_per_6" n="6">
+                            Ogni regione si trova posta 
+                            sul percorso di un certo numero di 
+                            fenomeni linguistici, i quali hanno ognuno <hi rend="italic">
+                            il proprio percorso determinato</hi>;
+                        </ab>
+                        <ab corresp="#pag_18_per_7" n="7">
+                            la somma dei 
+                            caratteri che risulta per ogni 
+                            regione dalla sovrapposizione accidentale di questo e 
+                            quest’altro fenomeno è ciò che costituisce, 
+                            se si vuole, il dialetto di questa regione.
+                        </ab>
+                        <ab corresp="#pag_18_per_8" n="8">
+                            Ma è impossibile trovare un carattere 
+                            che permetta di delimitare questo dialetto 
+                            in rapporto a ogni altro – a meno 
+                            di prendere un solo paesino.
+                        </ab>
+                </div>
+            </div>
+        </body>
+
+        <back>
+            <!-- Appendice -->
+            <div type="Appendice">
+
+                <!-- Terminologia -->
+                <list type="Terminologia">
+                    <label>
+                        <term xml:id="principe" xml:lang="fr">Principe</term>
+                        <term ref="#principe" xml:lang="it">Principio</term>
+                    </label>
+                    <item>
+                        <gloss target="#principe" xml:lang="it" source="https://www.treccani.it/vocabolario/principio/">
+                            Concetto, affermazione, enunciato che forma uno dei fondamenti di una dottrina, di una scienza o di una disciplina, di un particolare sistema, o che, più semplicemente, sta alla base di un ragionamento, di una convinzione 
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="abord" xml:lang="fr">Au premier abord</term>
+                        <term ref="#abord" xml:lang="it">Di primo acchito</term>
+                    </label>
+                    <item>
+                        <gloss target="#abord" xml:lang="it" source="https://www.treccani.it/vocabolario/ricerca/di-primo-acchito/">
+                            alla prima, subito
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="immediatement" xml:lang="fr">Immédiatement</term>
+                        <term ref="#immediatement" xml:lang="it">Immediatamente</term>
+                    </label>
+                    <item>
+                        <gloss target="#immediatement" xml:lang="it" source="https://www.treccani.it/vocabolario/ricerca/immediato/">
+                            Direttamente, senza interposizione di tempo o di luogo o d’altri fatti o persone
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="carte" xml:lang="fr">Carte</term>
+                        <term ref="#carte" xml:lang="it">Carta</term>
+                    </label>
+                    <item>
+                        <gloss target="#carte" xml:lang="it" source="https://it.wikipedia.org/wiki/Carta">
+                            La <hi rend="bold">carta</hi> è un materiale igroscopico, composto da materie prime soprattutto vegetali, unite per feltrazione ed essiccate.
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="limites" xml:lang="fr">Limites</term>
+                        <term ref="#limites" xml:lang="it">Limiti</term>
+                    </label>
+                    <item>
+                        <gloss target="#limites" xml:lang="it" source="https://it.wikipedia.org/wiki/Carta">
+                            Confine, linea terminale o divisoria
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="dialecte" xml:lang="fr">Dialecte</term>
+                        <term ref="#dialecte" xml:lang="it">Dialetto</term>
+                    </label>
+                    <item>
+                        <gloss target="#dialecte" xml:lang="it" source="https://it.wikipedia.org/wiki/Carta">
+                            Il <hi rend="bold case(allcaps)">dialetto</hi> è un sistema linguistico adoperato in un ambito geografico limitato, che non ha raggiunto o che ha perduto diffusione e prestigio di fronte a un altro sistema linguistico diventato dominante e riconosciuto come ufficiale, cioè la lingua nazionale
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="parfaitement" xml:lang="fr">Parfaitement</term>
+                        <term ref="#parfaitement" xml:lang="it">Perfettamente</term>
+                    </label>
+                    <item>
+                        <gloss target="#parfaitement" xml:lang="it" source="https://www.treccani.it/vocabolario/perfettamente/">
+                             In modo perfetto, eccellente, nel migliore dei modi
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="car" xml:lang="fr">Caractères</term>
+                        <term ref="#car" xml:lang="it">Caratteri</term>
+                    </label>
+                    <item>
+                        <gloss target="#car" xml:lang="it" source="https://www.treccani.it/vocabolario/carattere/">
+                             Segno distintivo, qualità propria che contraddistingue una persona, un organismo, un fenomeno collettivo, una cosa, da altri
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="distinctifs" xml:lang="fr">Distinctifs</term>
+                        <term ref="#distinctifs" xml:lang="it">Distintivi</term>
+                    </label>
+                    <item>
+                        <gloss target="#distinctifs" xml:lang="it" source="https://www.treccani.it/vocabolario/distintivo/">
+                            Atto a distinguere; In linguistica, <hi rend="italic">carattere d.</hi> (o <hi rend="italic">tratto pertinente</hi>), di un fonema e in genere di qualsiasi unità linguistica, il carattere per cui il fonema o l’unità si distingue da altro elemento del sistema con il quale condivida un nucleo di caratteri comuni
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="dcirc" xml:lang="fr">Dialectes circonvoisins</term>
+                        <term ref="#dcirc" xml:lang="it">Dialetti circonvicini</term>
+                    </label>
+                    <item>
+                        <gloss target="#dcirc" xml:lang="it" source="https://www.treccani.it/vocabolario/circonvicino/">
+                            <add resp="#SC">(dialetto)</add> di luogo o di gente che sia nelle vicinanze e nei dintorni di una località
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="exemple" xml:lang="fr">Exemple</term>
+                        <term ref="#exemple" xml:lang="it">Esempio</term>
+                    </label>
+                    <item>
+                        <gloss target="#exemple" xml:lang="it" source="https://www.treccani.it/vocabolario/esempio/">
+                            Fatto particolare che serve a illustrare un’affermazione generica, a dare evidenza a un principio teorico
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="dsav" xml:lang="fr">Dialecte savoyard</term>
+                        <term ref="#dsav" xml:lang="it">Dialetto savoiardo</term>
+                    </label>
+                    <item>
+                        <gloss target="#dsav" xml:lang="it" source="https://www.treccani.it/vocabolario/esempio/">
+                            <add resp="#SC">(dialetto)</add> Della Savoia, regione storica e geografica delle Alpi occidentali
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="premiere" xml:lang="fr">Premiere</term>
+                        <term ref="#premiere" xml:lang="it">Primo</term>
+                    </label>
+                    <item>
+                        <gloss target="#premiere" xml:lang="it" source="https://www.treccani.it/vocabolario/primo/">
+                            Numerale ordinale (indicato con 1° se si utilizzano cifre arabiche, oppure con il numero romano I) che, con il suo normale uso di agg., è attribuito a persona, animale o cosa (concreta o astratta) che, nella sequenza, nella serie o nel gruppo di cui fa parte, precede altre persone o animali o cose (simili o analoghe) e non è da altre preceduta, sia in senso spaziale (con riguardo alla collocazione, alla disposizione, al movimento, alla successione), sia in senso temporale, sia con riferimento alla posizione in elenchi, classifiche, graduatorie
+                        </gloss>
+                    </item>
+                     <label>
+                        <term xml:id="devoir" xml:lang="fr">Devoir</term>
+                        <term ref="#devoir" xml:lang="it">Dovere</term>
+                    </label>
+                    <item>
+                        <gloss target="#devoir" xml:lang="it" source="https://www.treccani.it/vocabolario/dovere/">
+                            Come sostantivo, la parola indica l’obbligo morale di fare qualcosa, oppure anche un obbligo dovuto alla religione o alla società
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="différent" xml:lang="fr">Différent</term>
+                        <term ref="#différent" xml:lang="it">Differente</term>
+                    </label>
+                    <item>
+                        <gloss target="#différent" xml:lang="it" source="https://www.treccani.it/vocabolario/differente/">
+                            Che ha natura o qualità dissimili da quelle di un altro oggetto o persona con cui è confrontato
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="dfran" xml:lang="fr">Dialecte français</term>
+                        <term ref="#dfran" xml:lang="it">Dialetto francese</term>
+                    </label>
+                    <item>
+                        <gloss target="#dfran" xml:lang="it" source="https://www.treccani.it/vocabolario/francese/">
+                            <add resp="#SC">(dialetto)</add> Della Francia, repubblica dell’Europa centro-occid.
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="ccdd" xml:lang="fr">Caractères communs de distinction</term>
+                        <term ref="#ccdd" xml:lang="it">Caratteri comuni di distinzione</term>
+                    </label>
+                    <item>
+                        <gloss target="#ccdd" xml:lang="it">
+                            Tratti distintivi presenti in più vocaboli
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="imaginer" xml:lang="fr">Imaginer</term>
+                        <term ref="#imaginer" xml:lang="it">Immaginare</term>
+                    </label>
+                    <item>
+                        <gloss target="#imaginer" xml:lang="it" source="https://www.treccani.it/vocabolario/immaginare/">
+                            Presentare alla fantasia l’immagine di cosa realmente esistente, cercando d’indovinarne i probabili aspetti
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="conservation" xml:lang="fr">Conservation</term>
+                        <term ref="#conservation" xml:lang="it">Conservation</term>
+                    </label>
+                    <item>
+                        <gloss target="#conservation" xml:lang="it" source="https://www.treccani.it/vocabolario/conservazione/">
+                            Il conservare
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="a" xml:lang="fr">A final atone</term>
+                        <term ref="#a" xml:lang="it">A finale atona</term>
+                    </label>
+                    <item>
+                        <gloss target="#a" xml:lang="it" source="https://www.treccani.it/vocabolario/atono/">
+                            In linguistica, privo di accento tonico
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="latin" xml:lang="fr">Latin</term>
+                        <term ref="#latin" xml:lang="it">Latina</term>
+                    </label>
+                    <item>
+                        <gloss target="#latin" xml:lang="it" source="https://www.treccani.it/vocabolario/latino/">
+                            Con partic. riferimento alla lingua latina, cioè alla lingua parlata e scritta dai Romani antichi
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="sicom" xml:lang="fr">Signe commun</term>
+                        <term ref="#sicom" xml:lang="it">Segno comune</term>
+                    </label>
+                    <item>
+                        <gloss target="#sicom" xml:lang="it" source="https://www.treccani.it/vocabolario/segno/">
+                            Nella concezione di F. de Saussure, il s. è l’entità psichica costituita dall’associazione di un concetto e di un’immagine acustica, cioè del significato e del significante, che è alla base della lingua, definita appunto da Saussure come un «sistema di s. distinti, corrispondenti a idee distinte».
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="sdd" xml:lang="fr">Signe distinctif dialectal</term>
+                        <term ref="#sdd" xml:lang="it">Segno distintivo dialettale</term>
+                    </label>
+                    <item>
+                        <gloss target="#sdd" xml:lang="it">
+                           Tratto linguistico dialettale distintivo
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="observation" xml:lang="fr">Observation</term>
+                        <term ref="#observation" xml:lang="it">Osservazione</term>
+                    </label>
+                    <item>
+                        <gloss target="#observation" xml:lang="it" source="https://www.treccani.it/vocabolario/osservazione/">
+                           L’atto di osservare e il risultato di esso, talora sinonimo, rispettivamente nei due significati
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="commun" xml:lang="fr">Commun</term>
+                        <term ref="#commun" xml:lang="it">Comune</term>
+                    </label>
+                    <item>
+                        <gloss target="#commun" xml:lang="it" source="https://www.treccani.it/vocabolario/comune">
+                            Ciò che è accettato e seguito dai più
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="groupe" xml:lang="fr">Groupe</term>
+                        <term ref="#gruope" xml:lang="it">Gruppo</term>
+                    </label>
+                    <item>
+                        <gloss target="#gruope" xml:lang="it" source="https://www.treccani.it/vocabolario/gruppo">
+                            Insieme di più cose o persone, distinte l’una dall’altra, ma riunite insieme in modo da formare un tutto
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="savoyard" xml:lang="fr">Savoyard</term>
+                        <term ref="#savoyard" xml:lang="it">Savoiardo</term>
+                    </label>
+                    <item>
+                        <gloss target="#savoyard" xml:lang="it" source="https://www.treccani.it/vocabolario/savoiardo">
+                            Della Savoia, regione storica e geografica delle Alpi occidentali
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="caractère" xml:lang="fr">Caractère</term>
+                        <term ref="#caractère" xml:lang="it">Caratteri</term>
+                    </label>
+                    <item>
+                        <gloss target="#caractère" xml:lang="it" source="https://www.treccani.it/vocabolario/carattere/">
+                            La forma delle lettere d’un alfabeto o dei segni d’una scrittura
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="locaux" xml:lang="fr">Locaux</term>
+                        <term ref="#locaux" xml:lang="it">Locali</term>
+                    </label>
+                    <item>
+                        <gloss target="#locaux" xml:lang="it" source="https://www.treccani.it/vocabolario/locale1/">
+                           Che è proprio e particolare di un determinato luogo
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="dal" xml:lang="fr">déplacement de l’accent latin </term>
+                        <term ref="#dal" xml:lang="it">Spostamento dell'accento latino </term>
+                    </label>
+                    <item>
+                        <gloss target="#dal" xml:lang="it" source="https://www.treccani.it/vocabolario/spostamento">
+                            L’azione di spostare, il fatto di spostarsi e di venire spostato
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="patois" xml:lang="fr">Patois</term>
+                        <term ref="#patois" xml:lang="it">Dialetto</term>
+                    </label>
+                    <item>
+                        <gloss target="#patois" xml:lang="it" source="https://it.wikipedia.org/wiki/Carta">
+                            Il dialetto è un sistema linguistico adoperato in un ambito geografico limitato, che non ha raggiunto o che ha perduto diffusione e prestigio di fronte a un altro sistema linguistico diventato dominante e riconosciuto come ufficiale, cioè la lingua nazionale
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="phénomène" xml:lang="fr">Phénomène</term>
+                        <term ref="#phénomène" xml:lang="it">Fenomeno</term>
+                    </label>
+                    <item>
+                        <gloss target="#phénomène" xml:lang="it" source="https://www.treccani.it/vocabolario/fenomeno">
+                            Sono fenomeni i fatti, gli eventi provocati o spontanei, ma comunque suscettibili di osservazione e di studio
+                        </gloss>
+                    </item>
+                    <label>
+                        <term xml:id="agéo" xml:lang="fr">Aire géographique</term>
+                        <term ref="#agéo" xml:lang="it">Area geografica</term>
+                    </label>
+                    <item>
+                        <gloss target="#agéo" xml:lang="it" source="https://it.wikipedia.org/wiki/Area_geografica">
+                            Un'area geografica o area territoriale è una porzione continua della superficie terrestre la cui estensione è caratterizzata da un'ampiezza non inferiore a qualche chilometro quadrato.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="savoie" xml:lang="fr">Savoie</term>
+                        <term ref="#savoie" xml:lang="it">Savoia</term>
+                    </label>
+                    <item>
+                        <gloss target="#savoie" xml:lang="it" source="https://www.treccani.it/enciclopedia/savoia_res-4a00ead8-edbd-11df-9962-d5ce3506d72e/">
+                            Regione storica delle Alpi Occidentali, politicamente appartenente alla Francia e confinante con l’Italia e la Svizzera.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="vaud" xml:lang="fr">Vaud</term>
+                        <term ref="#vaud" xml:lang="it">Vaud</term>
+                    </label>
+                    <item>
+                        <gloss target="#vaud" xml:lang="it" source="https://www.treccani.it/enciclopedia/vaud/">
+                            Cantone della Svizzera occidentale (3212 km2 con 688.245 ab. nel 2009), compreso tra il Giura a SO e N, le Alpi Bernesi a E, il Lago di Ginevra a S. Capoluogo Losanna.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="valais" xml:lang="fr">Valais</term>
+                        <term ref="#valais" xml:lang="it">Vallese</term>
+                    </label>
+                    <item>
+                        <gloss target="#valais" xml:lang="it" source="https://www.treccani.it/enciclopedia/vallese/">
+                            Cantone della Svizzera meridionale (5224 km2 con 298.580 ab. nel 2008); capoluogo Sion.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="phén" xml:lang="fr">Phénomènes</term>
+                        <term ref="#phén" xml:lang="it">Fenomeni</term>
+                    </label>
+                    <item>
+                        <gloss target="#phén" xml:lang="it" source="https://it.wikipedia.org/wiki/Fenomeno">
+                            Il termine fenomeno (dal greco antico: φαινόμενον, fainòmenon, «che appare») è riferito a tutto quello che si presenta come oggettivamente costituito all'osservatore che quindi lo può cogliere attraverso l'apparato sensibile.
+                        </gloss>
+                    </item>
+            
+                    
+                    <label>
+                        <term xml:id="distingue" xml:lang="fr">Distinguer</term>
+                        <term ref="#distingue" xml:lang="it">Distinguere</term>
+                    </label>
+                    <item>
+                        <gloss target="#distingue" xml:lang="it" source="https://www.treccani.it/vocabolario/distinguere/">
+                            Riconoscere diversi fra loro due o più oggetti, avvertendo, con i sensi e con l’intelletto, la differenza che è tra essi:
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="udialect" xml:lang="fr">Unités dialectales</term>
+                        <term ref="#udialect" xml:lang="it">Unità dialettale</term>
+                    </label>
+                    <item>
+                        <gloss target="#udialect" xml:lang="it" source="https://www.treccani.it/vocabolario/dialetto/">
+                             Il dialetto è un sistema linguistico adoperato in un ambito geografico limitato, che non ha raggiunto o che ha perduto diffusione e prestigio di fronte a un altro sistema linguistico diventato dominante e riconosciuto come ufficiale, cioè la lingua nazionale.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="abs" xml:lang="fr">Absolutment</term>
+                        <term ref="#abs" xml:lang="it">Assolutamente </term>
+                    </label>
+                    <item>
+                        <gloss target="#abs" xml:lang="it" source="https://www.treccani.it/vocabolario/assolutamente/">
+                            Decisamente, necessariamente, in ogni modo
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="chim" xml:lang="fr">Chimérique</term>
+                        <term ref="#chim" xml:lang="it">Chimerico </term>
+                    </label>
+                    <item>
+                        <gloss target="#chim" xml:lang="it" source="https://www.treccani.it/vocabolario/chimerico/">
+                            Che ha natura di chimera, fantastico, illusorio.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="vain" xml:lang="fr">Vain</term>
+                        <term ref="#vain" xml:lang="it">Vano</term>
+                    </label>
+                    <item>
+                        <gloss target="#vain" xml:lang="it" source="https://www.treccani.it/vocabolario/vano/">
+                             Privo di corpo, di consistenza materiale.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="région" xml:lang="fr">Région</term>
+                        <term ref="#région" xml:lang="it">Regione </term>
+                    </label>
+                    <item>
+                        <gloss target="#région" xml:lang="it" source="https://www.treccani.it/vocabolario/regione/">
+                            Ampia parte della superficie terrestre, distinta per caratteri particolari (geografici, storici, antropici) che ne fanno un’unità bene individuata rispetto alle regioni vicine o all’insieme che la comprende.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="phénling" xml:lang="fr">Phénomènes linguistiques</term>
+                        <term ref="#phénling" xml:lang="it">Fenomeni linguistici</term>
+                    </label>
+                    <item>
+                        <gloss target="#phénling" xml:lang="it" source="https://www.sololibri.net/Linguistica-cos-e-e-cosa-studia">
+                            Una lingua (o un fenomeno linguistico) possono essere studiati nel loro mutare nel tempo (in diacronia), oppure in un preciso momento storico (sincronia).
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="det" xml:lang="fr">Détermines</term>
+                        <term ref="#det" xml:lang="it">Determinato</term>
+                    </label>
+                    <item>
+                        <gloss target="#det" xml:lang="it" source="https://www.treccani.it/vocabolario/determinato/">
+                            Di cosa il cui aspetto o i cui caratteri siano definiti e precisi.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="res" xml:lang="fr">Résulte</term>
+                        <term ref="#res" xml:lang="it">Risulta</term>
+                    </label>
+                    <item>
+                        <gloss target="#res" xml:lang="it" source="https://www.treccani.it/vocabolario/risulta/">
+                            Il fatto di risultare, di derivare o provenire.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="acc" xml:lang="fr">Accidentelle</term>
+                        <term ref="#acc" xml:lang="it">Accidentale</term>
+                    </label>
+                    <item>
+                        <gloss target="#acc" xml:lang="it" source="https://www.treccani.it/vocabolario/accidentale/">
+                            Che accade per caso, fortuito, casuale.
+                        </gloss>
+                    </item>
+
+                    <label>
+                        <term xml:id="del" xml:lang="fr">Délimiter</term>
+                        <term ref="#del" xml:lang="it">Delimitato</term>
+                    </label>
+                    <item>
+                        <gloss target="#del" xml:lang="it" source="https://www.treccani.it/vocabolario/delimitare/">
+                            Limitare, circoscrivere; segnare il limite, i confini.
+                        </gloss>
+                    </item>
+                </list>
+
+                <!-- Persone -->
+                <listPerson type="real">
+                    <person xml:id="FDS">
+                        <persName>
+                            <forename>Ferdinand</forename>
+                            <surname>De Saussure</surname>
+                        </persName>
+                            <sex>M</sex>
+                            <birth>
+                                <date when="26-11-1857">26 novembre 1857</date>
+                                <placeName ref="#Ginevra">
+                                    <settlement>Ginevra</settlement>
+                                    <country>Svizzera</country>
+                                </placeName>
+                            </birth>
+                            <death>
+                                <date when="22-02-1913">22 febbraio 1913</date>
+                                <placeName>
+                                    <settlement>Vufflens-le-Château</settlement>
+                                    <country>Svizzera</country>
+                                </placeName>
+                            </death>
+                            <note> Ferdinand De Saussure è stato un linguista e semiologo svizzero, considerato tra i padri fondatori della linguistica moderna e dello strutturalismo</note>
+                            <ptr type="furtherInfo" target="https://it.wikipedia.org/wiki/Ferdinand_de_Saussure" />
+                    </person>
+                </listPerson>
+
+                <!--Bibliografia-->
+                <listBibl>
+                    <bibl xml:id="BELibro">
+                        <author ref="#FDS">Ferdinand De Saussure</author>
+                        <title xml:lang="fr">Ecrits de linguistique générale</title>
+                        <editor xml:id="SB" n="1">
+                            <forename>Simon</forename>
+                            <surname>Bouquet</surname>
+                        </editor>
+                        <editor xml:id="RE" n="2">
+                            <forename>Rudolf</forename>
+                            <surname>Engler</surname>
+                        </editor>
+                        <pubPlace>
+                            <placeName ref="#Parigi">Parigi</placeName>
+                        </pubPlace>
+                        <publisher>Gallimard</publisher>
+                        <date when="2002-02">febbraio 2002</date>
+                        <idno type="ISBN">978-2070761166</idno>
+                    </bibl>
+                    
+                    <bibl xml:id="EFLibro">
+                        <author xml:id="EF">Emanuele Fadda</author>
+                        <title type="main" xml:lang="it">Lingua e mente sociale</title>
+                        <title type="sub" xml:lang="it">Per una teoria delle istituzioni linguistiche a partire da Saussure e Mead</title>
+                        <pubPlace>
+                            <placeName ref="#Acireale" n="1">Acireale</placeName>
+                            <placeName ref="#Roma" n="2">Roma</placeName>
+                        </pubPlace>
+                        <publisher>Bonanno</publisher>
+                        <date when="2006-01">gennaio 2006</date>
+                        <idno type="ISBN">978-8877962768</idno>
+                    </bibl>
+
+                    <bibl xml:id="TDMLibro">
+                        <author ref="#FDS">Ferdinand De Saussure</author>
+                        <title xml:lang="it">Corso di linguistica generale</title>
+                        <editor xml:id="TDM">
+                            <forename>Tullio</forename>
+                            <surname>De Mauro</surname>
+                        </editor>
+                        <pubPlace>
+                            <placeName ref="#Bari" n="1">Bari</placeName>
+                            <placeName ref="#Roma" n="2">Roma</placeName>
+                        </pubPlace>
+                        <publisher>Laterza</publisher>
+                        <date when="2009-09">settembre 2009</date>
+                        <idno type="ISBN">978-8842021162</idno>
+                    </bibl>
+
+                    <bibl xml:id="ACLibro" xml:lang="fr">
+                        <author xml:id="AC">
+                            <forename>Alessandro</forename>
+                            <surname>Chidichimo</surname>
+                        </author>
+                        <title>Cahiers <persName ref="#FDS">Ferdinand de Saussure</persName></title>
+                        <pubPlace ref="#Ginevra">
+                            <placeName ref="#Ginevra">Ginevra</placeName>
+                        </pubPlace>
+                        <publisher>Librairie Droz</publisher>
+                        <date when="2009">2009</date>
+                    </bibl>
+                </listBibl>
+
+                
+                <!--Luoghi-->
+                <listPlace type="towns">
+                    <place xml:id="Ginevra">
+                        <placeName>Ginevra</placeName>
+                        <location>
+                            <country>Svizzera</country>
+                        </location>
+                    </place>
+                    <place xml:id="Parigi">
+                        <placeName>Parigi</placeName>
+                        <location>
+                            <country>Francia</country>
+                        </location>
+                    </place>
+                    <place xml:id="Roma">
+                        <placeName>Roma</placeName>
+                        <location>
+                            <country>Italia</country>
+                        </location>
+                    </place>
+                    <place xml:id="Acireale">
+                        <placeName>Acireale</placeName>
+                        <location>
+                            <country>Italia</country>
+                        </location>
+                    </place>
+                    <place xml:id="Bari">
+                        <placeName>Bari</placeName>
+                        <location>
+                            <country>Italia</country>
+                        </location>
+                    </place>
+                </listPlace>
+
+            </div>
+        </back>
+    </text>
+</TEI>
+
+
+
+
+                            
+
+
+
+
