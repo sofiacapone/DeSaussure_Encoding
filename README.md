@@ -1,4 +1,4 @@
-# Esame_Codifica_Def
+# DeSaussure_Encoding
 La presente cartella contiene tutti i file per l'esame di Codifica di Testi realizzato da: 
 <ul>
   <li>Sofia Capone</li>
